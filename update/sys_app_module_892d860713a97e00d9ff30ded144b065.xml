@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Merchant Underwriting">5f9c0ec313a97e00d9ff30ded144b001</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_prole_merchant_u_merchant_underwriting">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Merchant Underwriting</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_prole_merchant_u_merchant_underwriting</name>
+        <order>100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_prole_merchant_u.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>sn_admin.tony.reid</sys_created_by>
+        <sys_created_on>2017-03-21 13:35:18</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>892d860713a97e00d9ff30ded144b065</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Active Merchant Underwriting Cases</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Merchant Underwriting" source="x_prole_merchant_u">bc2dcec313a97e00d9ff30ded144b03c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Merchant Underwriting">bc2dcec313a97e00d9ff30ded144b03c</sys_scope>
+        <sys_update_name>sys_app_module_892d860713a97e00d9ff30ded144b065</sys_update_name>
+        <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+        <sys_updated_on>2017-03-21 13:41:15</sys_updated_on>
+        <timeline_page/>
+        <title>Active Merchant Underwriting Cases</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

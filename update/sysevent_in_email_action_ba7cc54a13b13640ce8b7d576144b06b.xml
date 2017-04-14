@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from display_value="New Merchant">c11d8d8a13b13640ce8b7d576144b0e0</from>
+        <name>New Merchant Underwriting Case - New</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[current.submitted_by = gs.getUserID();
+current.short_description = email.subject;
+current.description = email.body_text;
+current.reply_email = email.origemail;
+current.priority = 4;
+current.state = 1;
+current.insert();]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>sn_admin.tony.reid</sys_created_by>
+        <sys_created_on>2017-03-30 16:34:34</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba7cc54a13b13640ce8b7d576144b06b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>New Merchant Underwriting Case - New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Merchant Underwriting" source="x_prole_merchant_u">bc2dcec313a97e00d9ff30ded144b03c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Merchant Underwriting">bc2dcec313a97e00d9ff30ded144b03c</sys_scope>
+        <sys_update_name>sysevent_in_email_action_ba7cc54a13b13640ce8b7d576144b06b</sys_update_name>
+        <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+        <sys_updated_on>2017-03-30 16:41:29</sys_updated_on>
+        <table>x_prole_merchant_u_merchant_underwriting</table>
+        <template/>
+        <type>new</type>
+    </sysevent_in_email_action>
+</record_update>

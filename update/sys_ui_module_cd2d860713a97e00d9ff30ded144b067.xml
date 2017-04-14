@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Merchant Underwriting">579c0ec313a97e00d9ff30ded144b007</application>
+        <filter/>
+        <name>Merchant Underwriting</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_prole_merchant_u.user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>sn_admin.tony.reid</sys_created_by>
+        <sys_created_on>2017-03-21 13:35:18</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd2d860713a97e00d9ff30ded144b067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Merchant Underwriting</sys_name>
+        <sys_package display_value="Merchant Underwriting" source="x_prole_merchant_u">bc2dcec313a97e00d9ff30ded144b03c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Merchant Underwriting">bc2dcec313a97e00d9ff30ded144b03c</sys_scope>
+        <sys_update_name>sys_ui_module_cd2d860713a97e00d9ff30ded144b067</sys_update_name>
+        <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+        <sys_updated_on>2017-03-21 13:35:18</sys_updated_on>
+        <table>x_prole_merchant_u_merchant_underwriting</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>sn_admin.tony.reid</sys_created_by>
+        <sys_created_on>2017-03-21 13:35:17</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>302d860713a97e00d9ff30ded144b001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_prole_merchant_u_merchant_underwriting.x_prole_merchant_u.user</sys_name>
+        <sys_package display_value="Merchant Underwriting" source="x_prole_merchant_u">bc2dcec313a97e00d9ff30ded144b03c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Merchant Underwriting">bc2dcec313a97e00d9ff30ded144b03c</sys_scope>
+        <sys_security_acl display_value="x_prole_merchant_u_merchant_underwriting">742d460713a97e00d9ff30ded144b0fe</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_302d860713a97e00d9ff30ded144b001</sys_update_name>
+        <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+        <sys_updated_on>2017-03-21 13:35:17</sys_updated_on>
+        <sys_user_role display_value="x_prole_merchant_u.user" name="x_prole_merchant_u.user">f82d460713a97e00d9ff30ded144b0dc</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

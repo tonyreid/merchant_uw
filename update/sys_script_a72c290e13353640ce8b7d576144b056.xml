@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_prole_merchant_u_merchant_underwriting</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Child Cases</name>
+        <order>999</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[updateChildCases();
+function updateChildCases() {
+	if (current.state.changesTo(7))
+		resolveChildCases();
+	else {
+		updateChildren('comments', 'Comment copied from Parent Case: '  + current.number);
+		updateChildren('work_notes', 'Work note copied from Parent Case: ' + current.number);
+	}
+	
+}
+
+function updateChildren(fieldName, msg) {
+	msg = gs.getMessage(msg);
+	var rec = new GlideRecord("x_prole_merchant_u_merchant_underwriting");
+	rec.addQuery("parent", current.sys_id);
+	//rec.addQuery("state", "!=", 7);
+	rec.addActiveQuery();
+	rec.query();
+	while (rec.next()) {
+		rec.state = current.state;
+		var fieldRawValue = current.getValue(fieldName) + '';
+		var fieldValue = fieldRawValue.trim();
+		if (!fieldValue || fieldValue.length <= 0)
+			return;
+		if (fieldRawValue.indexOf(msg) == 0)
+			rec[fieldName] = fieldRawValue;
+		else
+			rec[fieldName] = msg + ": " + fieldRawValue;
+		rec.update();
+	}
+}
+
+//
+// Resolve active, unresolved cases that are children of the current case
+//
+function resolveChildCases() {
+	var gr = new GlideRecord("x_prole_merchant_u_merchant_underwriting");
+	gr.addActiveQuery();
+	gr.addQuery("parent", current.sys_id);
+	gr.addQuery("state", "!=", 7);
+	gr.query();
+	var msg = "";
+	while (gr.next()) {
+		//gs.info("Case" + gr.number + ' resolved based on resolution of Parent Case ' + current.number);
+		gr.state = 7;
+		if (gr.close_notes.nil()) {
+			msg = "Close notes copied from Parent Case " + current.number;
+			if (current.close_notes.toString().indexOf(msg) == 0)
+				gr.close_notes = current.close_notes;
+			else
+				gr.close_notes = msg + ": " + current.close_notes;
+		}
+		msg = "Resolved based on resolution of Parent Case. " + current.number;
+		if (current.comments.toString().indexOf(msg) == 0){
+			gr.comments = current.comments;
+		}
+		else {
+			gr.comments = msg + " " + current.comments;
+		gr.work_notes = current.work_notes;
+		}
+		gr.update();
+	}
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>sn_admin.tony.reid</sys_created_by>
+        <sys_created_on>2017-03-30 18:59:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a72c290e13353640ce8b7d576144b056</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Update Child Cases</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Merchant Underwriting" source="x_prole_merchant_u">bc2dcec313a97e00d9ff30ded144b03c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Merchant Underwriting">bc2dcec313a97e00d9ff30ded144b03c</sys_scope>
+        <sys_update_name>sys_script_a72c290e13353640ce8b7d576144b056</sys_update_name>
+        <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+        <sys_updated_on>2017-04-03 14:49:45</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a72c290e13353640ce8b7d576144b056"/>
+</record_update>

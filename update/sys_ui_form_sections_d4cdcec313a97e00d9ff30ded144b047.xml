@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="d4cdcec313a97e00d9ff30ded144b047" sys_domain="global" table="x_prole_merchant_u_merchant_underwriting" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>sn_admin.tony.reid</sys_created_by>
+            <sys_created_on>2017-03-21 13:37:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90cdcec313a97e00d9ff30ded144b048</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_prole_merchant_u_merchant_underwriting" name="x_prole_merchant_u_merchant_underwriting" sys_domain="global" view="Default view">d4cdcec313a97e00d9ff30ded144b047</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_prole_merchant_u_merchant_underwriting" sys_domain="global" view="Default view">913d8ec313a97e00d9ff30ded144b0b4</sys_ui_section>
+            <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+            <sys_updated_on>2017-03-21 13:37:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>sn_admin.tony.reid</sys_created_by>
+            <sys_created_on>2017-03-21 14:13:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>11f5524f13a97e00d9ff30ded144b0fe</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_prole_merchant_u_merchant_underwriting" name="x_prole_merchant_u_merchant_underwriting" sys_domain="global" view="Default view">d4cdcec313a97e00d9ff30ded144b047</sys_ui_form>
+            <sys_ui_section caption="Close Notes" display_value="Close Notes" name="x_prole_merchant_u_merchant_underwriting" sys_domain="global" view="Default view">9df5524f13a97e00d9ff30ded144b0fa</sys_ui_section>
+            <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+            <sys_updated_on>2017-03-23 14:52:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>sn_admin.tony.reid</sys_created_by>
+            <sys_created_on>2017-03-21 13:37:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18cdcec313a97e00d9ff30ded144b049</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_prole_merchant_u_merchant_underwriting" name="x_prole_merchant_u_merchant_underwriting" sys_domain="global" view="Default view">d4cdcec313a97e00d9ff30ded144b047</sys_ui_form>
+            <sys_ui_section caption="Case History" display_value="Case History" name="x_prole_merchant_u_merchant_underwriting" sys_domain="global" view="Default view">d8cdcec313a97e00d9ff30ded144b048</sys_ui_section>
+            <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+            <sys_updated_on>2017-03-23 14:52:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_prole_merchant_u_merchant_underwriting</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>sn_admin.tony.reid</sys_created_by>
+            <sys_created_on>2017-03-21 13:37:59</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d4cdcec313a97e00d9ff30ded144b047</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>x_prole_merchant_u_merchant_underwriting</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Merchant Underwriting" source="x_prole_merchant_u">bc2dcec313a97e00d9ff30ded144b03c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Merchant Underwriting">bc2dcec313a97e00d9ff30ded144b03c</sys_scope>
+            <sys_update_name>sys_ui_form_sections_d4cdcec313a97e00d9ff30ded144b047</sys_update_name>
+            <sys_updated_by>sn_admin.tony.reid</sys_updated_by>
+            <sys_updated_on>2017-03-21 14:13:49</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
